@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *  more headers goes there 
+ * Check wether a number is positive, zero or negative
  *  
- * betty style doc for function main goes there
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -14,15 +14,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n>0) 
 	{
-		printf("%d  n is positive\n", n);
+		printf("%d is positive\n", n);
 	}
-	if (n=0) 
+	else if (n==0)
 	{
-		printf("%d  n is zero\n", n);
+		printf("%d is zero\n", n);
 	}
-	if (n<0) 
+	else 
 	{
-		printf("%d n is negative\n", n);
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
