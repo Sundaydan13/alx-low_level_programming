@@ -5,17 +5,11 @@
  *
  * Return: 0 (success).
  */
-int factorial(int n);
+int factorial(int n)
 {
-	int n;
-	if (n==0);
-	{
-		_putchar(1);
-		_putchar(n-1);
-	}
-	else if (n<0);
-	{
-		-putchar(-1);
-	}
-	return (n);
+	if (n < 0)
+		return (-1);
+	if (n == 0)
+		return (1);
+	return (n * factorial(n - 1));
 }
