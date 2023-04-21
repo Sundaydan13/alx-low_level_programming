@@ -7,7 +7,7 @@
  * Return: return 0 always on success
  */
 
-int main(voi)
+int main(void)
 {
 	int sum;
 	sum = n(4, 6, 12, 16);
