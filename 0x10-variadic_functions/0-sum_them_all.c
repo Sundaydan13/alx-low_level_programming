@@ -1,13 +1,13 @@
-#include <stdio.h>
-#include <stlib.h>
+#include "variadic_functions.h"
+#include <stdarg.h>
 
 /**
  * main - function that return all the sum of the parameter
  *
- * Return: return 0 always on success
+ * Return: if n == 0 always on success
  */
 
-int main(void)
+int sum_them_all(const unsigned int n, ...)
 {
 	int sum;
 	sum = n;
@@ -15,7 +15,7 @@ int main(void)
 
 	if (n != 0)
 	{
-		printsum("%d\n", sum);
+		_putchar_sum("%d\n", sum);
 	}
 	else
 	{
