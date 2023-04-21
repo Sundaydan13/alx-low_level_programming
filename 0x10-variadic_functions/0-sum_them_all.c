@@ -10,7 +10,8 @@
 int main(void)
 {
 	int sum;
-	sum = n(4, 6, 12, 16);
+	sum = n;
+	n = (4, 6, 12, 16);
 
 	if (n != 0)
 	{
