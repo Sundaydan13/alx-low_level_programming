@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+
 /**
+ * main - duplicate to function _strdup
  * _strdup - duplicate to new memory space location
  * @str: char
- * Return: 0
+ * Return: Return 0 sucess
  */
 char *_strdup(char *str)
 {
