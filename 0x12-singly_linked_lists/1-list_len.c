@@ -10,13 +10,17 @@
 size_t print_list(const list_t *h)
 {
 	size_t s = 0;
+	char buf[20];
 
 	for (; h != NULL; h = h->next, s++)
 	{
 		if (h->str == NULL)
-			_putchar("[0] (nil)\n");
+			write(STDOUT_FILENO, "[0] (nil)\n", 11);
 		else
-			_putchar("[%u] %s\n", h->len, h->str);
+		{
+			int len = snprintf(buf, 20, "[%u] %s\n", h->len, h->str);
+			write(STDOUT_FILENO, buf, len);
+		}
 	}
 	return (s);
 }
