@@ -1,11 +1,8 @@
-#include <stdlib.h>
-#include "list.h"
 #include <stdio.h>
 
 void __attribute__ ((constructor)) first(void);
 
 /**
- * main - function call
  * first - The printed sentence should come before the main
  * Execution function
  *
