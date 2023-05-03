@@ -11,20 +11,18 @@
  * - the data inside the element that was deleted,
  * or 0 if the list is empty
  */
-
 int pop_listint(listint_t **head)
 {
-	if (!head || !(*head))
-	{
+	listint_t *temp;
+	int num;
+
+	if (!head || !*head)
 		return (0);
-	}
 
-	int num = (*head)->n;
-	listint_t* temp = (*head)->next;
-
+	num = (*head)->n;
+	temp = (*head)->next;
 	free(*head);
-
-	(*head) = temp;
+	*head = temp;
 
 	return (num);
 }
